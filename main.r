@@ -1,14 +1,17 @@
-numbers <- readline(prompt = "Enter numbers seperated by commas: ")
+numbers <- readline(prompt = "Enter numbers separated by commas: ")
 
-num_vector <- as.numeric(unlist(strsplit(numbers, ", ")))
+numbers <- gsub(" ", "", numbers)
+num_vector <- as.numeric(unlist(strsplit(numbers, ",")))
 
-mean_value <- mean(num_vector)
-medial_value <- median(num_vector)
-sd_value <- sd(num_vector)
+if (any(is.na(num_vector))) {
+  stop("Invalid input! Please enter numbers separated by commas.")
+}
 
-new_line <- "\n"
+mean_val <- mean(num_vector)
+median_val <- median(num_vector)
+sd_val <- sd(num_vector)
 
-cat("Numbers entered: ", num_vector, new_line)
-cat("Mean: ", round(mean_value, 2), new_line)
-cat("Median", round(mean_value, 2), new_line)
-cat("Standard Deviation: ", round(sd_value, 2), new_line)
+cat("Numbers entered:", num_vector, "\n")
+cat("Mean:", round(mean_val, 2), "\n")
+cat("Median:", round(median_val, 2), "\n")
+cat("Standard Deviation:", round(sd_val, 2), "\n")
