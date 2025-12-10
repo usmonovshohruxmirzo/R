@@ -70,3 +70,61 @@ header("Matrices")
 m <- matrix(1:9, nrow = 3, ncol = 3)
 print(m)
 print(m[1, 2])
+
+# Data Frames (Tables)
+header("Data Frames")
+
+df <- data.frame(
+  Name = c("Alice", "Bob"),
+  Age = c(25, 30),
+  Score = c(88, 92)
+)
+
+print(df)
+print(df$Name)
+print(df[, "Age"])
+
+df$Passed <- df$Score > 90
+print(df)
+
+# Factors (Categorical Data)
+header("Factors (Categorical Data)")
+
+gender <- factor(c("Male", "Female", "Female", "Male"))
+levels(gender)
+
+
+# Functions
+header("Functions")
+square <- function(x) {
+  return(x^2)
+}
+print(square(5))
+
+greet <- function(name = "User") {
+  print(paste("Hello", name))
+}
+greet("Alex")
+greet()
+
+# Loops
+header("Loops")
+
+for (i in 1:5) {
+  print(i)
+}
+
+count <- 1
+while (count <= 3) {
+  print(count)
+  count <- count + 1
+}
+
+# Conditionals
+header("Conditionals")
+x <- 10
+if (x > 5) {
+  print("x is greater than 5")
+} else {
+  print("x is 5 or less")
+}
