@@ -128,3 +128,20 @@ if (x > 5) {
 } else {
   print("x is 5 or less")
 }
+
+
+# Reading and Writing Data
+header("Reading and Writing Data")
+write.csv(df, "example.csv", row.names = FALSE)
+df2 <- read.csv("example.csv")
+print(df2)
+
+# Basic Statistics
+header("Basic Statistics")
+
+vec2 <- c(10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 150)
+mean(vec2)    # average
+median(vec2)  # middle value
+sd(vec2)      # standard deviation (spread)
+var(vec2)     # variance
+summary(vec2) # min, 1Q, median, mean, 3Q, max
