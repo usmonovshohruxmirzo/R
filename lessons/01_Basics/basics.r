@@ -1,3 +1,5 @@
+source("../../helpers/helpers.r")
+
 x <- 10
 y <- 20 # Assignment using <- (preferred) or =
 name <- "Alex"
@@ -5,13 +7,6 @@ name <- "Alex"
 print(x)
 print(y)
 print(name)
-
-header <- function(title) {
-  line <- strrep("=", 30)
-  cat(line)
-  cat("\n", title, "\n")
-  cat(line, "\n")
-}
 
 # Data Types
 header("Data Types")
