@@ -1,3 +1,5 @@
+source("../../helpers/helpers.r")
+
 header("Vectors")
 
 vec <- c(10, 20, 30, 40, 50)

@@ -1,3 +1,5 @@
+source("../../helpers/helpers.r")
+
 header("Data Types")
 
 num_double <- 5.5

@@ -1,3 +1,6 @@
+source("../../helpers/helpers.r")
+
+header("Variables")
 x <- 10
 y <- 20 # Assignment using <- (preferred) or =
 name <- "Alex"

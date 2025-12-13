@@ -1,3 +1,5 @@
+source("../../helpers/helpers.r")
+
 header("Functions")
 square <- function(x) {
   return(x^2)
